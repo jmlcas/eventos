@@ -18,6 +18,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: node_crud
+    volumes:
+      - ./db:/var/lib/mysql      
     expose:
       - 3306
     restart: unless-stopped

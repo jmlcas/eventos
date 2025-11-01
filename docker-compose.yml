@@ -1,12 +1,10 @@
-version: '3'
-
 services:
 
   app:
     container_name: node-mysql
     build: .
     ports:
-      - "8080:3000"
+      - "8200:3000"
     links:
       - mysql
     depends_on:

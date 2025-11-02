@@ -1,6 +1,6 @@
 services:
 
-  eventos:
+  app:
     container_name: eventos
     build: .
     ports:
